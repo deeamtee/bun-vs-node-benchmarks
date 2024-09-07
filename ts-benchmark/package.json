@@ -1,0 +1,24 @@
+{
+  "name": "ts-benchmark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc:hello": "tsc hello.ts && node dist/hello.js",
+    "tsc:calculate": "tsc compute.ts && node dist/calculate.js",
+    "esbuild:hello": "esbuild hello.ts --outfile=hello.js --bundle && node hello.js",
+    "esbuild:calculate": "esbuild calculate.ts --outfile=calculate.js --bundle && node calculate.js",
+    "tsx:hello": "tsx hello.ts",
+    "tsx:calculate": "tsx calculate.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.5.3",
+    "esbuild": "^0.23.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
